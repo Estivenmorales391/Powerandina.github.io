@@ -1,0 +1,315 @@
+
+body{
+    margin: 0px;
+    padding: 0%;
+    background-color: #005598;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.47'%3E%3Cpolygon fill='%23004b87' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23004276' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23003965' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23003055' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23002746' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*ENCABEZADO*/
+#encabezado {
+    background-color:#E3E3E3;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+}
+/*-----------------------------------------------------*/
+/*LOGO*/
+#logo {
+    height: 100px;
+    width: auto;
+    left: 5;
+}
+/*-----------------------------------------------------*/
+/*INDICE*/
+#indice {
+    display: flex;
+   /* background-color: aqua;*/
+    height: 99px;
+    width: 50%;
+   padding: 0%;
+   margin: 0%;
+   justify-content: space-around;
+   text-align: center;  
+}
+.l2 {
+    display: inline;
+    width: 150px;
+    height: 100px;
+    /*background-color: bisque;*/
+    line-height:  100px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+/*-----------------------------------------------------*/
+/*CARRITO*/
+#carrito {
+    height: 60px;
+    width: auto;
+}
+/*-----------------------------------------------------*/
+/*BANNER PEQUEÑO*/
+.wabe {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100px;   
+}
+.fondo{
+    background-color: white;
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    opacity: 70%;
+    top: 200px;
+}
+/*-----------------------------------------------------*/
+/*BANNER DE CATEGORIAS*/
+#promocion{
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+}
+#categorias {
+height: 80px;
+margin:0 100% 0 40%;
+font-size: 50px;
+}
+#categorias2 {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.caja {
+    background-color: #E3E3E3;
+  
+    height: 260px;
+    width: 220px;
+    margin: 10px;
+    font-size: 30PX;
+    text-align: center;
+}
+ #cocina {
+    background-image: url(../IMG/cocina.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+ }
+
+ #cocina:hover {
+    transform: scale(1.1);
+   
+ }
+#baño {
+    background-image: url(../IMG/bano-publico.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#baño:hover{
+    transform: scale(1.1);
+}
+#cocina:hover {
+    transform: scale(1.1);
+}
+#lavanderia {
+    background-image: url(../IMG/lavanderia.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+#lavanderia:hover {
+    transform: scale(1.1);
+}
+#bioseguridad{
+    background-image: url(../IMG/habitos.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+#bioseguridad:hover{
+    transform: scale(1.1);
+}
+#PISOS{
+    background-image: url(../IMG/trapeador-de-piso.png);
+    /*background-position: 0;*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 38px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+#PISOS:hover{
+    transform: scale(1.1);
+}
+/*-----------------------------------------------------*/
+
+/*BANNER PEQUEÑO*/
+.wabe2 {
+    position: absolute;
+    top: 650px;
+    width: 100%;
+    height: 100px; 
+   
+}
+.fondo2{
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    opacity: 70%;
+    top:750px;
+}
+/*-----------------------------------------------------*/
+
+
+.puntosventa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    padding-top:100px;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow:  0 5px 10px #efefef;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 4) ;
+    text-align: center;
+    opacity: 50%;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: rgb(3, 35, 54);
+    padding: 0px;
+    color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px
+}
+.card .back p {
+    letter-spacing:1px ;
+}
+
+.card:hover .front {
+    transform:  perspective(600px) rotateY(180deg);
+}
+.card:hover .back {
+    transform:  perspective(600px) rotateY(360deg);
+}
+
+
+
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+    height: 400px;
+}
+
+.grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap:50px ;
+    padding: 0px 0;
+}
+
+.grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grupo-1 .box figure img{
+    width: 250px;
+    margin: 0 50px 0 0;
+}
+
+.grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+
+.grupo-1 .box p {
+    color:#efefef;
+    margin-bottom: 10px;
+}
+
+.grupo-1 .red-social img {
+    height: 45px;
+    width: 45px;
+}
+
+.grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
